@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header>img{
+    position: fixed;
+    width: 20vw;
+    top: -4vw; 
+}
+header>nav{
+    top: 2vh;
+}
+section {
+    height: 100vh;
+    font-size: 50vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-attachment: fixed;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.6fr 1.4fr;  
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "A"
+      "B"; 
+}
+section:nth-of-type(1) {
+    background-image: url('../medias/images/Dune03.webp');
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+}
+section:nth-of-type(2) {
+    background-image: url('../medias/images/Dune02.webp');
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.7fr 0.9fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "A"
+      "B"
+      "C"; 
+}
+section:nth-of-type(2)>div{
+    display: flex;
+    justify-content: flex-end;
+}
+section:nth-of-type(2)>div:nth-of-type(2){
+    background-color: rgb(66 91 169 / 28%);
+    height: 90%;
+}
+section:nth-of-type(2)>div>img{
+    width: 25vw;
+    height: 30vh;
+    position: relative;
+    right: 10vw;
+    top: 4vw;
+}
+section:nth-of-type(2)>div>p{
+    margin: auto;
+    font-size: medium;
+    width: 60%;
+}
+section:nth-of-type(3) {
+    background-image: url('../medias/images/Dune01.webp');
+}
+section:nth-of-type(3)>div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(66 91 169 / 28%);
+    height: 90%;
+}
+section:nth-of-type(3)>div>img{
+    position:absolute;
+    width: 30%;
+    right: 20%;
+    margin-bottom: 10%;
+}
+section:nth-of-type(3)>div>nav{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 98vw;
+}
+section:nth-of-type(3)>div>nav>img{
+    height: 6vh;
+    width: 3vw;
+    filter: invert(0%);
+    margin:0;
+}
+section:nth-of-type(3)>div>nav>img:nth-of-type(2){
+    transform: rotate(-90deg);
+}
+section:nth-of-type(3)>div>nav>img:nth-of-type(1){
+    transform: rotate(90deg);
+}
+section:nth-of-type(4) {
+    background-image: url('../medias/images/Dune04.webp');
+}
+section:nth-of-type(4)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66 91 169 / 28%);
+    height: 90%;
+}
+section:nth-of-type(4)>div>img{
+    position:absolute;
+    width:60%;
+}
+section:nth-of-type(5) {
+    background-image: url('../medias/images/Dune05.webp');
+}
+section:nth-of-type(5)>article{
+    background-color: #ffffff1c;
+    height: 50vh;
+    display: flex;
+}
+section:nth-of-type(5)>article>p{
+    width: 18vw;
+    line-height: 2vw;
+    text-align: justify;
+}
+section:nth-of-type(6) {
+    background-image: url('../medias/poster/dune_poster_vierge.png');
+}
+html {
+    scroll-snap-type: y mandatory;
+}
+section {
+    scroll-snap-align: start;
+}
+nav{
+    position: fixed;
+    left: 95%;
+    top: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+nav:hover{
+    cursor: pointer;
+}
+nav>img{
+    height:2vw;
+    filter: invert(70%);
+    margin:1vw 0;
+}
+h1{
+    font-family:"DinNext";
+    font-size: 3vw;
+    text-shadow: 0.1vw 0.2vw 0.3vw black;
+    margin-left: 5vw;
+    display: flex;
+    align-items: flex-end;
+}
+p{
+    font-size:medium;
+}
+@font-face {
+    font-family: "DinNext";
+    src: url("../fonts/DINNextLTPro-Light.ttf") format("truetype");
+}
+section#cinema>article>div#map { 
+    width: 50vw;
+    height: 60vh;
+    margin: auto;
+    top: -4.5vh;
+    left: -5vw;
+}
+section#cinema>article>div>button{
+    border-radius: 18px;
+    width: 160px;
+    margin-top: 18%;
+    height: 40px;
+    font-size: 17px;
+    font-family: "DinNext";
+}
+section#cinema>article>div>p{
+    text-align: justify;
+    margin: 0 auto;
+}
+section#cinema>article>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 5%;
+}
+#video {
+  display: block;
+  z-index:1000;
+}
+
+.scroll {
+  position: fixed !important;
+  width: 560px !important;
+  height: 360px !important;
+  top: 5vh !important;
+  right: 5% !important;
+}
+#cast{
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 70px;
+    height: 500px;
+    align-self: center;
+}
+#cast>img{
+    width: 18%;
+    object-fit: cover;
+    cursor:pointer;
+}
+#info-cast>div>img{
+    width:110px;
+    object-fit: cover;
+}
+#info-cast{
+    display: none;
+    background-color: #040248d1;
+    padding:2%;
+}
+#info-cast>div{
+    display: flex;
+}
+#info-cast>div>div{
+    padding-left: 30px;
+    width: 510px;
+}
+#info-cast>div>div>h2{
+    font-size: 10%;
+    text-align: center;
+}
+#info-cast>div>div>h3{
+    font-size: 4%;
+    padding: 2% 0% 6% 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#info-cast>div>div>h4{
+    font-size: 3%;
+    padding: 1%;
+    text-align: center;
+}
+#info-cast>p{
+    width: 622px;
+    font-size: 13px;
+    padding-top: 3%;
+    height: 270px;
+    overflow: auto;
+    columns: 2;
+}
+#casting>div{
+    font-family: "DinNext";
+    display:flex;
+    height: 500px;
+}

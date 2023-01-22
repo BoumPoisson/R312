@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="icon" href="medias/favicon/favicon.ico" />
+    <title>Dune</title>
+    <script src="script/cinema_fr.geojson"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script/jquery-3.6.1.js"></script>
+    <script src="script/script.js" defer></script>
+    <script src="script/plugin.js"></script>
+</head>
+<body>
+    <header>
+        <img src="medias/poster/tt_couleur.png"></img>
+        <nav>
+            <img src="medias/logos/legendary_logo.svg"></img>
+            <img src="medias/logos/wb_logo.svg"></img>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Only in cinemas</h1>
+            <div id="video"></div>
+        </section>
+        <section>
+            <h1>About the film</h1>
+            <div>
+                <img src="medias/images/denis_villeneuve.webp"></img>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam blanditiis quo voluptate beatae in enim molestias, ducimus asperiores a ea dolorem corrupti, explicabo ex ad earum cum rem itaque.
+                Ullam fugit culpa, quod minima facilis cupiditate saepe assumenda veniam? Magni magnam accusantium aliquam velit repudiandae asperiores ducimus, perferendis repellendus totam quia deleniti soluta vero debitis molestiae laudantium eligendi. Nemo.
+                Temporibus est voluptates illo veniam quod iure. Beatae accusamus soluta suscipit accusantium est! Ex praesentium fugiat ipsam, debitis aliquid eum quidem veniam! Ex in delectus consequatur voluptate asperiores facere voluptatem?</p>
+            </div>
+        </section>
+        <section>
+            <h1>Characters</h1>
+            <div>
+                <nav>
+                    <img src="medias/arrow.png"></img>
+                    <img src="medias/arrow.png"></img>
+                </nav>
+                <img src ="medias/characters/baron_harkonnen.jpg"></img>
+                <img src ="medias/characters/chani.jpg"></img>
+                <img src ="medias/characters/dr_wellington_yueh.jpg"></img>
+                <img src ="medias/characters/duke_leto_atreides.jpg"></img>
+                <img src ="medias/characters/duncan_idaho.jpg"></img>
+                <img src ="medias/characters/gurney_halleck.jpg"></img>
+                <img src ="medias/characters/lady_jessica.jpg"></img>
+                <img src ="medias/characters/liet_kynes.jpg"></img>
+                <img src ="medias/characters/paul_atreides.jpg"></img>
+                <img src ="medias/characters/rabban_harkonnen.jpg"></img>
+                <img src ="medias/characters/stilgar.jpg"></img>
+            </div>
+        </section>
+        <section>
+            <h1>Video & images</h1>
+            <div>
+                <img src ="medias/images/09.jpg"></img>
+                <img src ="medias/images/10.jpg"></img>
+                <img src ="medias/images/12.jpg"></img>
+                <img src ="medias/images/13.jpg"></img>
+                <img src ="medias/images/14.jpg"></img>
+                <img src ="medias/images/17.jpg"></img>
+            </div>
+        </section>
+        <section id="cinema">
+            <h1>Find a theater</h1>
+            <article>
+                <div>
+                    <p id="cinema">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, impedit quidem? Facere sunt molestias id quam. Nisi, rerum. Adipisci corrupti iusto, quasi maiores velit molestiae porro veritatis laborum rerum eius.</p>
+                    <button>Locate me !</button>
+                </div>
+                <div id="map"></div>
+            </article>
+        </section>
+        <section id="casting">
+            <h1>Cast and crew</h1>
+            <div>
+                <div id="cast"></div>
+                <div id="info-cast"></div>
+            </div>
+        </section>
+    </main>
+    <nav>
+        <img src="medias/logos/logo_facebook.svg"></img>
+        <img src="medias/logos/logo_instagram.svg"></img>
+        <img src="medias/logos/logo_twitter.svg"></img>
+    </nav>
+</body>
+</html>
